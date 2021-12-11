@@ -1,29 +1,15 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import ClassCounter from './component/ClassCounter'
 
 
-class ClassCounter extends React.Component {
-  constructor() {
-    super();
 
-    this.state = {count: 0};
-  }
-
-  render(){
-    return (
-      <div className="App">
-
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      {<ClassCounter />}
+    </div>
+  );
 }
-
-// function App() {
-//   return (
-//     <div className="App">
-      
-//     </div>
-//   );
-// }
 
 export default App;
